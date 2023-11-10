@@ -8,7 +8,7 @@ function Header() {
     <header className="header">
       <div className="logo">
         <Link to="/">
-          <img src="/path-to-your-logo.png" alt="Website Logo" />
+          <img src="" alt="Website Logo" />
         </Link>
       </div>
       <nav className="navigation">
@@ -17,6 +17,8 @@ function Header() {
           <li><Link to="/news">お知らせ</Link></li>
           <li><Link to="/project">企画一覧</Link></li>
           <li><Link to="/access">アクセス</Link></li>
+          <li><Link to="/Notes">注意事項</Link></li>
+
         </ul>
       </nav>
     </header>

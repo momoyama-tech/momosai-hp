@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import News from './pages/News';
 import Project from './pages/Project';
 import Access from './pages/Access';
+import Notes from './pages/Notes';
 import './App.css'; 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/project" element={<Project />} />
         <Route path="/access" element={<Access />} />
+        <Route path="/notes" element={<Notes />} />
       </Routes>
     </Router>
   );
