@@ -1,9 +1,10 @@
 import React from 'react';
+import ACCESS from '../components/ACCESS';
 
 function Access() {
   return (
     <div>
-      <h1>アクセス情報</h1>
+<ACCESS />
     </div>
   );
 }
