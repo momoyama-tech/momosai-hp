@@ -1,0 +1,44 @@
+.footer {
+    background-color: #d32f2f; 
+    color: white;
+    text-align: center;
+  }
+  
+  .footer-socials,
+  .footer-nav {
+    padding: 10px 0;
+  }
+  
+  .footer-socials a,
+  .footer-nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* ナビゲーションリンクのパディングを調整 */
+  }
+  
+  .footer-nav a {
+    margin: 0 20px; /* リンク間の余白 */
+  }
+  
+  .footer-bottom {
+    background-color: #a00000; /* コピーライトのセクションの背景色を暗めに */
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 600px) {
+    .footer-nav {
+      flex-direction: column;
+    }
+  
+    .footer-nav a {
+      margin: 10px 0; /* モバイルビューでのリンク間隔 */
+    }
+  }

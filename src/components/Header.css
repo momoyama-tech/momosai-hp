@@ -1,50 +1,72 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    padding: 20px 40px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 40px;
+}
+
+.logo {
+  flex: 1; /* ロゴに柔軟性を持たせる */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.navigation {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.navigation li {
+  padding: 0 20px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #ff0000;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navigation li a:hover {
+  color: #cc0000;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px; 
   }
-  
+
   .logo {
-    /* ロゴが小さい場合、ここでサイズを調整 */
-    flex: 1; /* ロゴに柔軟性を持たせる */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; 
+    justify-content: left;
+    flex-grow: 1;
   }
-  
-  .logo img {
-    height: 50px; 
-  }
-  
+
   .navigation {
-    flex: 2; 
-    display: flex;
-    justify-content: flex-end; 
+    display: none;
   }
-  
-  .navigation ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    align-items: center;
+  .logo img {
+    height: 50px;
   }
-  
-  .navigation li {
-    padding: 0 20px; 
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 40px; 
   }
-  
-  .navigation li a {
-    text-decoration: none;
-    color: #ff0000; 
-    font-size: 16px;
-    transition: color 0.3s;
-  }
-  
-  .navigation li a:hover {
-    color: #cc0000; 
-  }
- 
+}
