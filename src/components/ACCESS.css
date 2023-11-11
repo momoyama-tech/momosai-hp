@@ -1,0 +1,49 @@
+.ACCESS{
+    margin-bottom: 100px;
+}
+
+.ACCESStitle{
+    text-align: center;
+}
+.title{
+    color: rgba(241, 55, 55, 1);
+}
+.ACCESSparagragh{
+    color: rgba(161, 5, 29, 1);
+}
+.ACCESScontents{
+    margin: auto;
+    margin-top: 50px;
+    height: 400px;
+    width: 85%;
+}
+.ACCESSindex1{
+    padding-bottom: 40px;
+}
+.TrafficAccess{
+    height: 80px;
+    width: 80%;
+    border-left: 7px solid rgba(125, 0, 26, 1);
+}
+.ACCESSindex1Text{
+    margin-top: 40px;
+}
+.TrafficAccessIndex1{
+    padding: 30px;
+    color: rgba(125, 0, 26, 1);
+}
+p{
+    font-size: 13px;
+}
+.CaupusMap{
+    height: 80px;
+    width: 80%;
+    border-left: 7px solid rgba(125, 0, 26, 1);
+}
+.ACCESSindex2Text{
+    margin-top: 40px;
+}
+.CaupusMapIndex2{
+    padding: 30px;
+    color: rgba(125, 0, 26, 1);
+}
