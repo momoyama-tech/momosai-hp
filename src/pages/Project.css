@@ -1,0 +1,30 @@
+.project {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .tab.active {
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+  }
+  
+  .content {
+    padding: 20px;
+    /* 以下に適切なスタイルを追加 */
+  }
+  

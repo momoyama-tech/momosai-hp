@@ -1,9 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './Project.css';
 
 function Project() {
+  const [activeTab, setActiveTab] = useState('topic');
+
   return (
-    <div>
-      <h1>企画情報</h1>
+    <div className="project">
+      <div className="tabs">
+        <button
+          className={`tab ${activeTab === 'topic' ? 'active' : ''}`}
+          onClick={() => setActiveTab('topic')}
+        >
+          屋内展示
+        </button>
+        <button
+          className={`tab ${activeTab === 'news' ? 'active' : ''}`}
+          onClick={() => setActiveTab('news')}
+        >
+           模擬店 
+        </button>
+      </div>
+      {activeTab === 'topic' && (
+        <div className="content">
+          <h1>屋内展示</h1>
+        </div>
+      )}
+      {activeTab === 'news' && (
+        <div className="content">
+          <h1>模擬店一覧</h1>
+        </div>
+      )}
     </div>
   );
 }
