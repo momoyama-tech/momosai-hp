@@ -34,11 +34,32 @@
   }
   
   @media (max-width: 600px) {
-    .footer-nav {
-      flex-direction: column;
+    .footer-socials {
+      justify-content: center;
+      padding-bottom: 10px;
+    }
+    
+    .footer-socials a {
+      margin: 0 10px;
     }
   
+    .footer-nav {
+      display: flex; /* ブロックではなくフレックスボックスに変更 */
+      justify-content: center; /* アイテムを中央に寄せる */
+      flex-wrap: wrap; /* 必要に応じて折り返す */
+    }
+    
     .footer-nav a {
-      margin: 10px 0; /* モバイルビューでのリンク間隔 */
+      display: inline; /* 各リンクをインライン要素にする */
+      margin: 0 5px; /* 横のマージンを調整 */
+      padding: 5px; /* タップしやすくするためにパディングを追加 */
+    }
+  
+    .nav-divider {
+      display: none; /* 区切り線は非表示に */
+    }
+    
+    .footer-bottom {
+      padding: 10px;
     }
   }
