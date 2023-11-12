@@ -1,0 +1,45 @@
+.caution-container {
+    max-width: 1240px; 
+    margin: auto; 
+    background-color: #f7f6f6; 
+    border-left: 5px solid rgba(125, 0, 26, 1); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 50px; 
+    margin-top: 50px;
+    padding-left: 100px;
+  }
+  
+  .caution-title {
+    color: #ff0000; 
+    font-size: 36px; 
+    margin-top: 0.5em; 
+    margin-bottom: 0.5em; 
+    text-align: center;
+  }
+  
+  .caution-subtitle {
+    color: #ff0000; 
+    font-size: 24px; 
+    margin-bottom: 2em; 
+    text-align: center; 
+  }
+  
+  .caution-section h4 {
+    color: #000;
+    margin-top: 1.5em;
+  }
+  
+  .caution-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .caution-section ul li {
+    margin-bottom: 0.5em;
+  }
+  
+  .caution-section ul li:before {
+    content: '・';
+    margin-right: 0.5em;
+    color: #ff0000;
+  }
