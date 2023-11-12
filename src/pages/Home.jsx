@@ -1,9 +1,12 @@
 import React from 'react';
+import Caution from '../components/Caution';
+import ACCESS from '../components/ACCESS';
 
 function Home() {
   return (
     <div>
-      <h1>top</h1>
+     <Caution />
+     <ACCESS />
     </div>
   );
 }

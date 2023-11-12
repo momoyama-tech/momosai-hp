@@ -1,9 +1,10 @@
 import React from 'react';
+import Caution from '../components/Caution';
 
 function Notes() {
   return (
     <div>
-      <h1>注意事項</h1>
+      <Caution />
     </div>
   );
 }
