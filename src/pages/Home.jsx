@@ -7,6 +7,7 @@ function Home() {
     <div>
      <Caution />
      <ACCESS />
+     <aaaaa/>
     </div>
   );
 }
