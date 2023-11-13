@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Project.css';
+import Map from '../components/Map';
 
 function Project() {
   const [activeTab, setActiveTab] = useState('topic');
@@ -23,6 +24,7 @@ function Project() {
       {activeTab === 'topic' && (
         <div className="content">
           <h1>屋内展示</h1>
+          <Map />
         </div>
       )}
       {activeTab === 'news' && (

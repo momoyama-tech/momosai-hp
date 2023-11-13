@@ -1,0 +1,32 @@
+.MESSAGE{
+    margin-bottom: 100px;
+    background-color: skyblue;
+}
+
+.MESSAGEtitle{
+    text-align: center;
+}
+.title{
+    color: rgba(241, 55, 55, 1);
+}
+.MESSAGEparagragh{
+    color: rgba(161, 5, 29, 1);
+}
+.MESSAGEcontents{
+    margin: auto;
+    margin-top: 50px;
+    height: 400px;
+    width: 85%;
+}
+.MESSAGEindex1{
+    padding-bottom: 40px;
+}
+.MESSAGEindex1Text{
+    margin-top: 40px;
+}
+p{
+    font-size: 13px;
+}
+.MESSAGEindex2Text{
+    margin-top: 40px;
+}
