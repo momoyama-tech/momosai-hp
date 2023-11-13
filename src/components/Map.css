@@ -1,6 +1,7 @@
 @media (min-width:768px){
     .aaa{
         display: flex;
+        margin: 0 auto;
     }
     .Map-indoor{
         margin:auto;
@@ -63,9 +64,64 @@
         position: relative;
         top: 20px;
         left: 20px;
-
+        color: #fff;
     }
 }
-@media (min-width:768px){
+@media (max-width:767px){
 
+.building-number1{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+    height: 40px;
+    background-color: rgba(242, 88, 56, 1);
+}
+.building-number-inboxtext{
+color: #fff;
+padding-top: 5%;
+font-size: 20px;
+}
+.Map-indoor-floor2-image{
+margin: 0 auto;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.information1{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(242, 88, 56, 1);
+}
+.information-title-text{
+    position: relative;
+    top: -5px;
+    color: #fff;
+}
+.information-title{
+    display: flex;
+}
+.room-number{
+    width: 20%;
+    height: 40px;
+    position: relative;
+    top:10px;
+    left: 10px;
+    background-color: #fff;
+    margin-right: 25px;
+}
+.room-number-inboxtext{
+    margin-top: 10px;
+    font-style: bold;
+}
+.information-text{
+    text-align: left;
+    position: relative;
+    top: -20px;
+    left: 10px;
+    color: #fff;
+}
+    
 }
