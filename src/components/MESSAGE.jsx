@@ -3,6 +3,7 @@ import './MESSAGE.css';
 
 function MESSAGE() {
     return (
+        <div>
         <div class="MESSAGE">
             <div class="MESSAGEtitle">
                 <h1 class="title">MESSAGE</h1>
@@ -14,6 +15,8 @@ function MESSAGE() {
                 おり、どの来場者様にも楽しんで頂けるイベントになっております。<br/>
                 来場者様、部活動やサークルの方々、大学職員そして桃山祭実行委員会で素晴らしい桃山祭を創り上げたいと思います。
             </p>
+        </div>
+        <div class="MESSAGEBottom"/><div/>
         </div>
     );
 }
