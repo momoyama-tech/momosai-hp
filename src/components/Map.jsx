@@ -11,7 +11,7 @@ function Map() {
         <div class="Map-indoor">
             <div class="Map-indoor-floor2">
                 <div class="Map-indoor-floor2-image">
-                    <img src="25796.jpg" alt="仮置きカミーユ"></img>
+                    <img src="no1-2F.png" alt="桃山学院大学1号館2階"></img>
                 </div>
                 <div class="Map-indoor-floor2-informations">
                     <div class="information1">
@@ -70,7 +70,7 @@ function Map() {
         <div class="Map-indoor">
             <div class="Map-indoor-floor2">
                 <div class="Map-indoor-floor2-image">
-                    <img src="25796.jpg" alt="仮置きカミーユ"></img>
+                    <img src="no1-3F.png" alt="桃山学院大学1号館三階"></img>
                 </div>
                 <div class="Map-indoor-floor2-informations">
                     <div class="information1">
