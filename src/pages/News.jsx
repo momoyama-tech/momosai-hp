@@ -51,6 +51,100 @@ function News() {
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        .news-container {
+          display: flex;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .sidebar {
+          padding: 20px;
+          border-right: 1px solid #ccc;
+          max-width: 200px; /* 左側の最大幅を指定 */
+        }
+
+        .main-content {
+          flex: 1;
+          padding: 20px;
+        }
+
+        .notification-container {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .notification-row {
+          display: flex;
+          width: 100%;
+        }
+
+        .notification-box {
+          border: 1px solid #ccc;
+          padding: 10px;
+          margin: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          flex: 1 0 calc(33.33% - 20px);
+          max-width: calc(33.33% - 20px);
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+        }
+
+        .date {
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+
+        .tags {
+          margin-top: 8px;
+          font-size: 12px;
+        }
+
+        .sidebar h2 {
+          margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        .sidebar li {
+          cursor: pointer;
+          margin-bottom: 5px;
+        }
+
+        .sidebar li:hover {
+          color: blue;
+        }
+
+        /* モバイルビュー用のスタイル */
+        .news-container.mobile-view {
+          flex-direction: column;
+        }
+
+        .notification-row.mobile-row {
+          flex-direction: column;
+        }
+
+        .notification-box.mobile-box {
+          max-width: 100%;
+        }
+
+        /* iPhone SE用のスタイル */
+        @media only screen and (max-width: 320px) {
+          .notification-box.mobile-box {
+            margin-bottom: 10px; /* 余白を追加 */
+          }
+        }
+      `}</style>
     </div>
   );
 }
