@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Project.css';
 import Map from '../components/Map';
+import MapMockStore from '../components/MapMockStore';
 
 function Project() {
   const [activeTab, setActiveTab] = useState('topic');
@@ -30,6 +31,7 @@ function Project() {
       {activeTab === 'news' && (
         <div className="content">
           <h1>模擬店一覧</h1>
+          <MapMockStore />
         </div>
       )}
     </div>

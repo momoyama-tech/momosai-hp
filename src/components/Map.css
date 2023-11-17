@@ -31,6 +31,7 @@
         margin-bottom: 20px;
     }
     .information1{
+        cursor: pointer;
         margin: auto;
         width: 80%;
         height: 100px;
@@ -83,9 +84,10 @@ padding-top: 5%;
 font-size: 20px;
 }
 .Map-indoor-floor2-image{
-margin: 0 auto;
-margin-top: 20px;
-margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .information1{
     margin: 0 auto;
@@ -124,4 +126,7 @@ margin-bottom: 20px;
     color: #fff;
 }
     
+}
+.store-information{
+display: none;
 }

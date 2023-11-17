@@ -21,9 +21,13 @@ function Map() {
                             </div>
                             <h4 class="information-title-text">テック部模擬店</h4>
                         </div>
-                        <p class="information-text">
-                            aaaaaaaaaaaaaaa
-                        </p>
+                        <div class="store-information">
+                            <ul>
+                                <li><p class="information-text">aaaaaaaaaaaaaaa</p></li>
+                                <li><p class="information-text">aaaaaaaaaaaaaaa</p></li>
+                                <li><p class="information-text">aaaaaaaaaaaaaaa</p></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="Map-indoor-floor2-informations">
