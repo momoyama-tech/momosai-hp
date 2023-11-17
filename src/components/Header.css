@@ -1,14 +1,15 @@
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
   padding: 20px 40px;
+  position: relative; 
 }
 
 .logo {
-  flex: 1; /* ロゴに柔軟性を持たせる */
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -22,6 +23,7 @@
   flex: 2;
   display: flex;
   justify-content: flex-end;
+  z-index: 1;
 }
 
 .navigation ul {
@@ -47,26 +49,68 @@
   color: #cc0000;
 }
 
-@media (max-width: 768px) {
-  .header {
-    padding: 10px 20px; 
-  }
+.nav-toggle {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  z-index: 2; 
+  font-size: 3em; 
+}
 
-  .logo {
-    justify-content: left;
-    flex-grow: 1;
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 
   .navigation {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    width: 250px;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.3s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  .navigation-visible {
+    transform: translateX(0);
+  }
+
+  .navigation ul {
+    flex-direction: column;
+  }
+
+  .navigation li {
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    justify-content: flex-start;
+  }
+
   .logo img {
-    height: 50px;
+    height: 70px;
   }
 }
 
 @media (max-width: 480px) {
   .logo img {
-    height: 40px; 
+    height: 40px;
   }
 }
