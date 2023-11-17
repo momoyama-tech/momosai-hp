@@ -8,7 +8,7 @@ function Header() {
     <header className="header">
       <div className="logo">
         <Link to="/">
-          <img src="momosai.jpg" alt="桃山祭" />
+          <img src="momosai02.png" alt="桃山祭" />
         </Link>
       </div>
       <nav className="navigation">
