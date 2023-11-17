@@ -1,0 +1,105 @@
+.Mock-store{
+    margin: auto;
+}
+.dli-pin-fill {
+    display: inline-block;
+    vertical-align: middle;
+    color: rgba(242, 88, 56, 1);
+    line-height: 1;
+    position: relative;
+    width: 0.8em;
+    height: 0.8em;
+    background: currentColor;
+    border: 0.1em solid currentColor;
+    border-radius: 40% 60% 0% 100% / 40% 100% 0% 60%;
+    box-sizing: content-box;
+    transform: rotate(45deg);
+    }
+    
+.dli-pin-fill::before {
+    content: '';
+    position: absolute;
+    top: 18%;
+    left: 18%;
+    width: 0.336em;
+    height: 0.336em;
+    background: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    }
+.dli-pin-fill, .dli-pin-fill::before{
+    position: relative;
+    top:120px;
+    left: -100px;
+}
+.Mock-store-map{
+    display: flex;
+    display: block;
+}
+.Map-image img{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: 0%;
+    display: block;
+    margin: auto;
+}
+.greyout-layer{
+    background: rgba(0, 0, 0, .2); 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    opacity: 0;
+    visibility: hidden;
+}
+.modal{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    min-width: 440px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+.modal-inner{
+    margin-top: 125px;
+    margin-bottom: 125px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);/* モーダルにシャドウをかける */
+    border-radius: 13px; /* モーダルの角を丸める */
+    display: block;
+    padding: 21px 8px 21px;
+    height: auto;
+}
+.modal-contents{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 23px;
+    text-align: center;
+}
+.greyout-layer.is-open{
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+}
+.greyout-layer.is-open .modal{
+    opacity: 1;
+    visibility: visible;
+}
+@media(max-width:767px) {
+    .Map-image img{
+        position: relative;
+        right: 0%;
+        display: block;
+        margin: auto;
+    }
+    
+}
