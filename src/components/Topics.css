@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box; 
+}
+  .topics-container {
+    max-width: 100%; 
+    margin: auto;
+    background-color: #f7f6f6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden; 
+  }
+  .topics-title {
+    text-align: center;
+    color: #ff0000;
+  }
+  
+  .topics-items {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+  }
+  
+  .topic-item {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .topic-item img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .topic-subtitle {
+    color: #0000ff;
+    margin-bottom: 5px;
+  }
+  
+  /* レスポンシブデザイン対応 */
+  @media (max-width: 768px) {
+    .topics-items {
+      justify-content: center;
+    }
+  
+    .topic-item {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .topic-item img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .topic-subtitle {
+      font-size: 20px; 
+    }
+  }
+  
