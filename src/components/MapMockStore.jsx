@@ -6,9 +6,9 @@ function MapMockStore() {
     return (
     <div class="Mock-store">
         <div class="Mock-store-map">
-            <span class="dli-pin-fill js-modal-button"></span>
+            <span class="Mock-store-pin js-modal-button"></span>
             <div class="Map-image">
-            <img src="Haman-Karn.jpg" alt="仮置きハマーン"></img>
+            <img src="Haman-Karn.jpg" alt="仮置きハマーン"></img>{/*画像が手に入ったら差し替え*/}
             </div>
         </div>
         <div class ="greyout-layer js-modal">
