@@ -1,75 +1,72 @@
 .caution-container {
-    max-width: 1240px; 
-    margin: auto; 
-    background-color: #f7f6f6; 
-    border-left: 5px solid rgba(125, 0, 26, 1); 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-    margin-bottom: 50px; 
-    margin-top: 50px;
-    padding: 50px;
+  max-width: 78%;
+  margin: 50px auto; 
+  background-color: rgba(104, 0, 20, 0.04); 
+  border-left: 5px solid rgba(125, 0, 26, 1); 
+  box-shadow: none;
+  padding: 40px 50px; 
+}
+.caution-title {
+  color: rgba(241, 55, 55, 1); 
+  font-size: 36px; 
+  margin-top: 0; 
+  margin-bottom: 40px; 
+  text-align: center; 
+}
+
+.caution-subtitle {
+  color: rgba(161, 5, 29, 1); 
+  font-size: 24px; 
+  margin-bottom: 40px; 
+  text-align: center;
+}
+
+.caution-section h4 {
+  color: #000; 
+  margin-top: 1.5em; 
+}
+
+.caution-section ul {
+  list-style: none; 
+  padding: 0; 
+}
+
+.caution-section ul li {
+  margin-bottom: 0.5em; 
+  font-size: 14px; 
+}
+
+.caution-section ul li:before {
+  content: '・'; 
+  margin-right: 0.5em; 
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .caution-container {
+    padding: 20px; 
+    margin-top: 20px;
+    border-left: none; 
   }
-  
+
   .caution-title {
-    color: #ff0000; 
-    font-size: 36px; 
-    margin-top: 0.5em; 
-    margin-bottom: 0.5em; 
-    text-align: center;
+    font-size: 28px; 
+    margin-top: 0.25em;
+    margin-bottom: 0.25em; 
   }
-  
+
   .caution-subtitle {
-    color: #ff0000; 
-    font-size: 24px; 
-    margin-bottom: 2em; 
-    text-align: center; 
+    font-size: 20px; 
+    margin-bottom: 1em; 
   }
-  
+
   .caution-section h4 {
-    color: #000;
-    margin-top: 1.5em;
+    font-size: 18px; 
+    margin-top: 1em; 
   }
-  
-  .caution-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
+
   .caution-section ul li {
-    margin-bottom: 0.5em;
+    font-size: 14px;
+    margin-bottom: 0.25em; 
   }
-  
-  .caution-section ul li:before {
-    content: '・';
-    margin-right: 0.5em;
-    color: #ff0000;
-  }
-  @media (max-width: 768px) {
-    .caution-container {
-      padding: 20px; /* スマートフォンでは左右のパディングを減らす */
-      margin-top: 20px;
-      margin-bottom: 20px;
-      border-left: none; /* スマートフォンでは左のボーダーを削除 */
-      box-shadow: none; /* シャドウを削除 */
-    }
-  
-    .caution-title {
-      font-size: 28px; /* タイトルのフォントサイズを小さく */
-      margin-top: 0.25em; /* 上の余白を減らす */
-      margin-bottom: 0.25em; /* 下の余白を減らす */
-    }
-  
-    .caution-subtitle {
-      font-size: 20px; /* サブタイトルのフォントサイズを小さく */
-      margin-bottom: 1em; /* 下の余白を減らす */
-    }
-  
-    .caution-section h4 {
-      font-size: 18px; /* セクションタイトルのフォントサイズを小さく */
-      margin-top: 1em; /* 上の余白を適切に */
-    }
-  
-    .caution-section ul li {
-      font-size: 16px; /* リストアイテムのフォントサイズを小さく */
-      margin-bottom: 0.25em; /* リストアイテムの余白を減らす */
-    }
-  }
+}

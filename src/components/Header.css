@@ -1,29 +1,30 @@
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
   padding: 20px 40px;
-  position: relative; 
+  position: relative; /* z-indexを有効にするためにposition指定が必要です */
 }
 
 .logo {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start; /* ロゴを左寄せに設定 */
 }
 
 .logo img {
-  height: 80px;
+  height: auto;
+  width: 120px; /* ロゴの幅を調整 */
 }
 
 .navigation {
   flex: 2;
   display: flex;
   justify-content: flex-end;
-  z-index: 1;
+  z-index: 1; /* メニューのz-indexを低く設定 */
 }
 
 .navigation ul {
@@ -51,22 +52,18 @@ header {
 
 .nav-toggle {
   display: none;
+  background: none;
+  border: none;
+  z-index: 2; /* ハンバーガーメニューボタンのz-indexを高く設定 */
+  font-size: 24px; /* アイコンのサイズを調整 */
   position: absolute;
   right: 10px;
   top: 10px;
-  background: none;
-  border: none;
-  z-index: 2; 
-  font-size: 3em; 
 }
-
 
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
-    position: absolute;
-    right: 10px;
-    top: 10px;
   }
 
   .navigation {
@@ -82,6 +79,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1; /* メニューのz-indexを低く設定 */
   }
 
   .navigation-visible {
@@ -100,17 +98,13 @@ header {
     padding: 10px 20px;
   }
 
-  .logo {
-    justify-content: flex-start;
-  }
-
   .logo img {
-    height: 70px;
+    width: 100px; /* スマホ画面でのロゴの幅を調整 */
   }
 }
 
 @media (max-width: 480px) {
   .logo img {
-    height: 40px;
+    width: 80px; /* 更に小さいスクリーンでのロゴの幅を調整 */
   }
 }
