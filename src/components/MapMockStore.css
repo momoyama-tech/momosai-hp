@@ -1,22 +1,25 @@
 .Mock-store{
     margin: auto;
 }
-.dli-pin-fill {
+.Mock-store-pin {
     display: inline-block;
-    vertical-align: middle;
     color: rgba(242, 88, 56, 1);
-    line-height: 1;
     position: relative;
-    width: 0.8em;
+    width: 0.05em;
     height: 0.8em;
     background: currentColor;
     border: 0.1em solid currentColor;
     border-radius: 40% 60% 0% 100% / 40% 100% 0% 60%;
     box-sizing: content-box;
     transform: rotate(45deg);
+    top:45px;
+    left: -62px;
+    margin-top:25px;
+    margin-left: 25px;
+    z-index: 1000;
     }
     
-.dli-pin-fill::before {
+    .Mock-store-pin::before {
     content: '';
     position: absolute;
     top: 18%;
@@ -27,22 +30,28 @@
     border-radius: 50%;
     box-sizing: border-box;
     }
-.dli-pin-fill, .dli-pin-fill::before{
+.Mock-store-pin-clicked{
+    display: inline-block;
+    color: rgb(163, 43, 19);
     position: relative;
-    top:120px;
-    left: -100px;
+    width: 0.05em;
+    height: 0.8em;
+    background: currentColor;
+    border: 0.1em solid currentColor;
+    border-radius: 40% 60% 0% 100% / 40% 100% 0% 60%;
+    box-sizing: content-box;
+    transform: rotate(45deg);
+    top:45px;
+    left: -62px;
+    margin-top:25px;
+    margin-left: 25px;
+    z-index: 1000;
 }
+
 .Mock-store-map{
-    display: flex;
-    display: block;
-}
-.Map-image img{
-    padding: 0;
-    margin: 0;
-    position: relative;
-    right: 0%;
-    display: block;
-    margin: auto;
+padding: 0;
+margin: 0;
+
 }
 .greyout-layer{
     background: rgba(0, 0, 0, .2); 
@@ -101,5 +110,6 @@
         display: block;
         margin: auto;
     }
+
     
 }
