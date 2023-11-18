@@ -1,9 +1,128 @@
-.Top{
-    background-color: rgba(241, 55, 55, 1);
-    width: -webkit-fill-available;
-    height: 210px;
-}
-.Top2{
-    background-color: white;
-    height: 560px;
-}
+.Top2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 650px; /* 画像の高さに合わせて調整 */
+    background-color: rgb(255, 85, 70); /* 背景色を指定 */
+    padding-top: 30px; /* 必要に応じて調整 */
+  }
+  
+  .slide-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+ 
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80%;
+    height: 590px; /* 画像の高さに合わせて調整 */
+    background-color: #cfe8e9; /* スライドの背景色 */
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%);
+    border-radius: 10px;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px; /* 矢印のサイズを調整 */
+    cursor: pointer;
+    z-index: 100; /* スライドよりも前面に表示 */
+  }
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px; /* 矢印のサイズを調整 */
+    cursor: pointer;
+    z-index: 100; /* スライドよりも前面に表示 */
+  }
+    
+    
+
+  
+  button.prev {
+    left: 10px; /* ボタンの位置を調整 */
+  }
+  
+  button.next {
+    right: 10px; /* ボタンの位置を調整 */
+  }
+  
+  .indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #333;
+  }
+  @media (max-width: 768px) {
+    .Top2 {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 220px; /* 画像の高さに合わせて調整 */
+        background-color: rgb(255, 85, 70); /* 背景色を指定 */
+        padding-top: 30px; /* 必要に応じて調整 */
+      }
+      
+      .slide-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+     
+      }
+      
+      .slide {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 80%;
+        height: 155px; /* 画像の高さに合わせて調整 */
+        background-color: #cfe8e9; /* スライドの背景色 */
+        background-size: 100%;
+        background-position: center;
+        transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%);
+        border-radius: 10px;
+      }
+      
+  }
+  
+  @media (max-width: 480px) {
+   
+  }
+  
