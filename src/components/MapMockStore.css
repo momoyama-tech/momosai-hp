@@ -5,13 +5,18 @@
     display: inline-block;
     color: rgba(242, 88, 56, 1);
     position: relative;
-    width: 0.8em;
+    width: 0.05em;
     height: 0.8em;
     background: currentColor;
     border: 0.1em solid currentColor;
     border-radius: 40% 60% 0% 100% / 40% 100% 0% 60%;
     box-sizing: content-box;
     transform: rotate(45deg);
+    top:45px;
+    left: -62px;
+    margin-top:25px;
+    margin-left: 25px;
+    z-index: 1000;
     }
     
     .Mock-store-pin::before {
@@ -25,21 +30,27 @@
     border-radius: 50%;
     box-sizing: border-box;
     }
-.Mock-store-pin{
+.Mock-store-pin-clicked{
+    display: inline-block;
+    color: rgb(163, 43, 19);
     position: relative;
+    width: 0.05em;
+    height: 0.8em;
+    background: currentColor;
+    border: 0.1em solid currentColor;
+    border-radius: 40% 60% 0% 100% / 40% 100% 0% 60%;
+    box-sizing: content-box;
+    transform: rotate(45deg);
     top:45px;
     left: -62px;
-    z-index: 1000;
     margin-top:25px;
     margin-left: 25px;
     z-index: 1000;
 }
+
 .Mock-store-map{
 padding: 0;
 margin: 0;
-
-}
-.Map-image img{
 
 }
 .greyout-layer{
