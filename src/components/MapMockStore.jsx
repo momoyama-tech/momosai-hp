@@ -15,7 +15,7 @@ function MapMockStore() {
         <div class="Mock-store-map">
             <button class={active ? "Mock-store-pin-clicked" : "Mock-store-pin"} onClick= { ShowModal}></button>
             <div class="Map-image">
-            <img src="Haman-Karn.jpg" alt="仮置きハマーン"></img>{/*画像が手に入ったら差し替え*/}
+                <img src="MapMockStore.jpg" alt="地図"></img>
             </div>
         </div>
     <MapMockStoreModal showFlag={showModal} setShowModal={setShowModal}/>
