@@ -1,13 +1,19 @@
 import React from 'react';
 import './Topics.css'; // CSSファイルをインポート
+import { useNavigate } from "react-router-dom";
 
 function Topics() {
+    const navigate = useNavigate();
+  
+    const onClickPage1 = () => {
+      navigate("/TopicPages");
+    };
   return (
     <div className="topics-container">
       <h2 className="topics-title">TOPICS</h2>
       
       <div className="topics-items">
-        <div className="topic-item">
+        <div className="topic-item" onClick={onClickPage1}>
           <img src="techsai.png" alt="桃山祭" />
           <h3 className="topic-subtitle">桃山祭のテック部出し物</h3>
           <p>桃山祭の説明...</p>

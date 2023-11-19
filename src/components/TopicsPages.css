@@ -1,0 +1,50 @@
+.heading{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.TPC{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    color: rgba(242, 88, 56, 1);
+}
+.TopicContents{
+    padding-left: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+article{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    right: 0px;
+}
+.image{
+width: 50%;
+}
+img{
+    text-align: center;
+    position: relative;
+    width: 75%;
+}
+.Title {
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    border-left: 5px solid rgba(242, 88, 56, 1);
+}
+.TopicName{
+    position: relative;
+    padding: 15px 15px 15px 30px;
+    font-size: 60px;
+}
+li{
+    list-style: none;
+    display: block;
+}
+.aaa{
+    display: block;
+}
