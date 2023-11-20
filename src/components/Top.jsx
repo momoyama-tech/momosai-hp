@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import './Top.css';
 
 function Top() {
@@ -11,7 +14,7 @@ function Top() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+      setCurrentSlide((currentSlide + 1) % slides.length);
     }, 5000);
     return () => clearTimeout(timer);
   }, [currentSlide, slides.length]);
@@ -32,8 +35,12 @@ function Top() {
           />
         ))}
       </div>
-      <button className="prev" onClick={() => setCurrentSlide((currentSlide - 1 + slides.length) % slides.length)}>&lt;</button>
-      <button className="next" onClick={() => setCurrentSlide((currentSlide + 1) % slides.length)}>&gt;</button>
+      <button className="prev" onClick={() => setCurrentSlide((currentSlide - 1 + slides.length) % slides.length)}>
+        <FontAwesomeIcon icon={faChevronLeft} beat/>
+      </button>
+      <button className="next" onClick={() => setCurrentSlide((currentSlide + 1) % slides.length)}>
+        <FontAwesomeIcon icon={faChevronRight} beat/>
+      </button>
       <div className="indicators">
         {slides.map((_, index) => (
           <div
