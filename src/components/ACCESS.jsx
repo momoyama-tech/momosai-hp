@@ -6,7 +6,7 @@ function ACCESS() {
         <div class="ACCESS">
             <div class="ACCESStitle">
                 <h1 class="title">ACCESS</h1>
-                <p class="ACCESSparagragh">アクセス</p>
+                
             </div>
             <div class="ACCESScontents">
                 <div class="ACCESSindex1">

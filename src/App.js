@@ -8,12 +8,14 @@ import Project from './pages/Project';
 import Access from './pages/Access';
 import Notes from './pages/Notes';
 import './App.css'; 
+import TopicDetail from './pages/TopicDetail';
 
 function App() {
   return (
     <Router>
       <Header /> 
       <Routes>
+        <Route path={`/TopicPages`} element={<TopicDetail />} />
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<News />} />
         <Route path="/project" element={<Project />} />

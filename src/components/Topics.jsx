@@ -1,32 +1,48 @@
 import React from 'react';
 import './Topics.css'; // CSSファイルをインポート
+import { useNavigate } from 'react-router-dom';
 
 function Topics() {
-  return (
-    <div className="topics-container">
-      <h2 className="topics-title">TOPICS</h2>
-      
-      <div className="topics-items">
-        <div className="topic-item">
-          <img src="techsai.png" alt="桃山祭" />
-          <h3 className="topic-subtitle">桃山祭のテック部出し物</h3>
-          <p>桃山祭の説明...</p>
-        </div>
+    const navigate = useNavigate();
 
-        <div className="topic-item">
-          <img src="techsai2.png" alt="桃山祭" />
-          <h3 className="topic-subtitle">桃山祭のテック祭</h3>
-          <p>桃山学院大学の文化祭の説明...</p>
-        </div>
+    // ページ移動用の関数
+    const onClickPage1 = () => {
+        navigate('/topic-page-1'); // トピック1へのパス
+    };
+    const onClickPage2 = () => {
+        navigate('/topic-page-2'); // トピック2へのパス
+    };
+    const onClickPage3 = () => {
+        navigate('/topic-page-3'); // トピック3へのパス
+    };
 
-        <div className="topic-item">
-          <img src="techsai3.png" alt="モモヤマ祭" />
-          <h3 className="topic-subtitle">桃山祭限定テックホットサンド</h3>
-          <p>ももさいの説明...</p>
+    return (
+        <div className="topics-container">
+            <h2 className="topics-title">桃山祭のハイライト</h2>
+            
+            <div className="topics-items">
+                <div className="topic-item" onClick={onClickPage1}>
+                    <img src="tech-img02.png" alt="桃山祭でのプロジェクションマッピングショーの様子" />
+                    <h3 className="topic-subtitle">桃山祭プロジェクションマッピング</h3>
+                    <p>幻想的な光のアートでキャンパスを彩るプロジェクションマッピングショー。</p>
+                </div>
+
+                <div className="topic-item" onClick={onClickPage2}>
+                    <img src="techsai2.png" alt="桃山祭でのデジタルアクアリウム展示" />
+                    <h3 className="topic-subtitle">桃山祭テックデジタルアクアリウム</h3>
+                    <p>桃山祭でデジタル技術で創り出された海底世界を体験できるアトラクション。</p>
+                </div>
+
+                <div className="topic-item" onClick={onClickPage3}>
+                    <img src="techsai4.png" alt="桃山祭限定ホットサンドの写真" />
+                    <h3 className="topic-subtitle">桃山祭テック部のホットサンド</h3>
+                    <p>桃山祭限定テック部特製のホットサンドで、美味しいひと時を。</p>
+                </div>
+
+         
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default Topics;
