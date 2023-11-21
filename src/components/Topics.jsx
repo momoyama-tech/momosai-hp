@@ -34,9 +34,27 @@ function Topics() {
                 </div>
 
                 <div className="topic-item" onClick={onClickPage3}>
-                    <img src="techsai4.png" alt="桃山祭限定ホットサンドの写真" />
+                    <img src="techsai4.png" alt="桃山祭限定ホットサンドメニュー" />
                     <h3 className="topic-subtitle">桃山祭テック部のホットサンド</h3>
                     <p>桃山祭限定テック部特製のホットサンドで、美味しいひと時を。</p>
+                </div>
+
+                <div className="topic-item" onClick={onClickPage3}>
+                    <img src="2023.png" alt="桃山祭限定ホットサンドの写真" />
+                    <h3 className="topic-subtitle">桃山祭テック部のホットサンドメニュー</h3>
+                    <p>ホットサンドメニュー、桃山祭で最高の時間を。</p>
+                </div>
+
+                <div className="topic-item" onClick={onClickPage3}>
+                    <img src="tech08.png" alt="桃山祭IT" />
+                    <h3 className="topic-subtitle">桃山祭IT</h3>
+                    <p>桃山祭で最先端のITをテック部が披露。</p>
+                </div>
+
+                <div className="topic-item" onClick={onClickPage3}>
+                    <img src="momonga01.png" alt="桃山祭ももんが" />
+                    <h3 className="topic-subtitle">桃山祭ももんが</h3>
+                    <p>ももんが桃山祭にて参上</p>
                 </div>
 
          
