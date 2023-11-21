@@ -2,24 +2,25 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 650px;
+  height: 550px;
   background-color: rgb(255, 85, 70); 
-  padding-top: 30px;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .slide-container {
   position: relative;
   width: 100%;
   height: 100%;
-
+  margin: auto;
 }
 
 .slide {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 80%;
-  height: 590px; 
+  width: 90%;
+  height: 100%; 
   background-color: #cfe8e9; 
   background-size: 100%;
   background-position: center;
@@ -27,7 +28,6 @@
   opacity: 0;
   visibility: hidden;
   transform: translateX(-50%);
-  border-radius: 10px;
 }
 
 .slide.active {
@@ -40,7 +40,7 @@
   transform: translateY(-50%);
   background: none;
   border: none;
-  font-size: 24px; 
+  font-size: 50px; 
   cursor: pointer;
   z-index: 100; 
   left: 10px; 
@@ -51,7 +51,7 @@
   transform: translateY(-50%);
   background: none;
   border: none;
-  font-size: 24px; 
+  font-size: 50px; 
   cursor: pointer;
   z-index: 2; 
   right: 10px; 
@@ -59,10 +59,6 @@
   
 
 .indicators {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -86,22 +82,22 @@
       overflow: hidden;
       height: 220px; 
       background-color: rgb(255, 85, 70); 
-      padding-top: 30px; 
+      padding-top: 5%;
     }
     
     .slide-container {
-      position: relative;
+     text-align: center;
       width: 100%;
-      height: 100%;
-   
+      height: 90%;
+      
     }
     
     .slide {
       position: absolute;
       top: 0;
       left: 50%;
-      width: 80%;
-      height: 155px; 
+      width: 100%;
+      height: 100%; 
       background-color: #cfe8e9; 
       background-size: 100%;
       background-position: center;
@@ -114,10 +110,12 @@
     
     .next {
       z-index: 2;
+      font-size: 25px; 
     }
 
     .prev {
       z-index: 2;
+      font-size: 25px; 
     }
 }
 
