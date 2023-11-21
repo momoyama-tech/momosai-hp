@@ -12,8 +12,8 @@
 
 .main-content {
   background-color: rgb(244, 243, 241);
-  flex: 1 0 calc(100% - 20px);
-  max-width: calc(100% - 20px);
+  flex: 1 0 calc(100%);
+  max-width: calc(100%);
   border-radius: 10px;
   flex: 1;
   padding: 20px;
