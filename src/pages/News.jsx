@@ -1,20 +1,36 @@
 import React, { useEffect, useState } from 'react';
+import TagSearch from '../components/TagSearch';
+import './News.css';
 
-function News() {
-  // useStateの第二引数（setNotifications）を削除して、未使用の変数警告を解決します。
+const News = () => {
+  // notifications を useState で初期化する
   const [notifications] = useState([
-    { content: "これはお知らせ1です", duration: 5000, tags: ["重要"], image: "https://example.com/image1.jpg", date: new Date("2023-11-01") },
-    { content: "お知らせ2: 何か大事なことがあります", duration: 7000, tags: ["一般"], image: "https://example.com/image2.jpg", date: new Date("2023-11-05") },
-    { content: "お知らせ3: おめでとうございます！", duration: 3000, tags: ["重要", "祝い事"], image: "https://example.com/image3.jpg", date: new Date("2023-11-10") },
+    { id: 1, content: "これはお知らせ1です", duration: 5000, tags: ["重要"], image: "https://example.com/image1.jpg", date: new Date("2023-11-01") },
+    { id: 2, content: "お知らせ2: 何か大事なことがあります", duration: 7000, tags: ["一般"], image: "https://example.com/image2.jpg", date: new Date("2023-11-05") },
+    { id: 3, content: "お知らせ3: おめでとうございます！", duration: 3000, tags: ["重要", "祝い事"], image: "https://example.com/image3.jpg", date: new Date("2023-11-10") },
+    { id: 4, content: "お知らせ4: おめでとうございます！", duration: 2000, tags: ["一般", "祝い事"], image: "https://example.com/image4.jpg", date: new Date("2023-11-21") },
     // ここに必要なだけお知らせを追加
   ]);
 
   const [selectedTag, setSelectedTag] = useState(null);
   const [isMobileView, setIsMobileView] = useState(false);
 
+  const debounce = (func, delay) => {
+    let timeout;
+    return function () {
+      const context = this;
+      const args = arguments;
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(context, args), delay);
+    };
+  };
+
   useEffect(() => {
-    const handleResize = () => setIsMobileView(window.innerWidth <= 600);
-    handleResize();
+    const handleResize = debounce(() => {
+      setIsMobileView(window.innerWidth <= 600);
+    }, 200);
+
+    handleResize(); // 初回呼び出し
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -27,23 +43,13 @@ function News() {
 
   return (
     <div className={`news-container ${isMobileView ? 'mobile-view' : ''}`}>
-  
-      <div className="sidebar">
-        <h2>タグ検索</h2>
-        <ul>
-          <li onClick={() => handleTagClick(null)}>すべて</li>
-          <li onClick={() => handleTagClick("重要")}>重要</li>
-          <li onClick={() => handleTagClick("一般")}>一般</li>
-          <li onClick={() => handleTagClick("祝い事")}>祝い事</li>
-          
-        </ul>
-      </div>
+      <TagSearch handleTagClick={handleTagClick} />
       <div className="main-content">
-        <h1>ニュースページ</h1>
+        <h1>桃山祭ニュースページ</h1>
         <div className="notification-container">
-          {filteredNotifications.map((notification, index) => (
-            <div key={index} className="notification-box">
-              <img src={notification.image} alt="桃山祭" />
+          {filteredNotifications.map(notification => (
+            <div key={notification.id} className="notification-box">
+              <img src={notification.image} alt={notification.content} />
               <p>{notification.content}</p>
               <p className="date">{`${notification.date.getMonth() + 1}月${notification.date.getDate()}日`}</p>
               <p className="tags">タグ: {notification.tags.join(", ")}</p>
@@ -51,100 +57,6 @@ function News() {
           ))}
         </div>
       </div>
-
-      <style jsx>{`
-        .news-container {
-          display: flex;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .sidebar {
-          padding: 20px;
-          border-right: 1px solid #ccc;
-          max-width: 200px; /* 左側の最大幅を指定 */
-        }
-
-        .main-content {
-          flex: 1;
-          padding: 20px;
-        }
-
-        .notification-container {
-          display: flex;
-          flex-wrap: wrap;
-        }
-
-        .notification-row {
-          display: flex;
-          width: 100%;
-        }
-
-        .notification-box {
-          border: 1px solid #ccc;
-          padding: 10px;
-          margin: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          flex: 1 0 calc(33.33% - 20px);
-          max-width: calc(33.33% - 20px);
-        }
-
-        img {
-          max-width: 100%;
-          height: auto;
-          margin-bottom: 10px;
-        }
-
-        .date {
-          font-size: 14px;
-          font-weight: bold;
-          margin-bottom: 5px;
-        }
-
-        .tags {
-          margin-top: 8px;
-          font-size: 12px;
-        }
-
-        .sidebar h2 {
-          margin-bottom: 10px;
-        }
-
-        .sidebar ul {
-          list-style-type: none;
-          padding: 0;
-          margin: 0;
-        }
-
-        .sidebar li {
-          cursor: pointer;
-          margin-bottom: 5px;
-        }
-
-        .sidebar li:hover {
-          color: blue;
-        }
-
-        /* モバイルビュー用のスタイル */
-        .news-container.mobile-view {
-          flex-direction: column;
-        }
-
-        .notification-row.mobile-row {
-          flex-direction: column;
-        }
-
-        .notification-box.mobile-box {
-          max-width: 100%;
-        }
-
-        /* iPhone SE用のスタイル */
-        @media only screen and (max-width: 320px) {
-          .notification-box.mobile-box {
-            margin-bottom: 10px; /* 余白を追加 */
-          }
-        }
-      `}</style>
     </div>
   );
 }

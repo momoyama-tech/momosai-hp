@@ -6,7 +6,7 @@ function MESSAGE() {
         <div>
         <div class="MESSAGE">
             <div class="MESSAGEtitle">
-                <h1 class="title">MESSAGE</h1>
+                <h1 class="title">桃山祭MESSAGE</h1>
                 <p class="MESSAGEparagragh">メッセージ</p>
             </div>
             <p class="MESSAGEindex2Text">

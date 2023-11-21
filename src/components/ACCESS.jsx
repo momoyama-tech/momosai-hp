@@ -5,7 +5,7 @@ function ACCESS() {
     return (
         <div class="ACCESS">
             <div class="ACCESStitle">
-                <h1 class="title">ACCESS</h1>
+                <h1 class="title">桃山祭ACCESS</h1>
                 
             </div>
             <div class="ACCESScontents">
