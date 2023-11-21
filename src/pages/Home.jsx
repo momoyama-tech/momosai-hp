@@ -5,6 +5,7 @@ import ACCESS from '../components/ACCESS';
 import Topics from '../components/Topics';
 import Top from '../components/Top';
 import Newss from '../components/Newss';
+import Twif01 from '../components/Twif01';
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
      <Newss />
      <Topics />
      <Caution />
+     <Twif01 />
      <ACCESS /> 
     </div>
   );
