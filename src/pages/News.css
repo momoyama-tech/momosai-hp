@@ -1,6 +1,6 @@
 .news-container {
   display: flex;
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -12,8 +12,8 @@
 
 .main-content {
   background-color: rgb(244, 243, 241);
-  flex: 1 0 calc(100% - 20px);
-  max-width: calc(100% - 20px);
+  flex: 1 0 calc(100%);
+  max-width: calc(100%);
   border-radius: 10px;
   flex: 1;
   padding: 20px;
@@ -39,8 +39,8 @@
   padding: 10px;
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  flex: 1 0 calc(31% - 20px);
-  max-width: calc(31% - 20px);
+  flex: 1 0 calc(29%);
+  max-width: calc(30%);
 }
 
 .notification-box:hover {

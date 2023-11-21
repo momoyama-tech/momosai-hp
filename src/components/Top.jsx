@@ -7,9 +7,9 @@ import './Top.css';
 function Top() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    { url: '/tech01.png', link: '/' },
-    { url: '/tech02.png', link: '/News' },
-    { url: '/tech05.png', link: '/Notes' },
+    { url: '/Mytech.png', link: '/' },
+    { url: '/top01.png', link: '/News' },
+    { url: '/Mytech.png', link: '/Notes' },
   ];
 
   useEffect(() => {
