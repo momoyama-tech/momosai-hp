@@ -66,4 +66,12 @@
   .topics-items {
       grid-template-columns: 1fr; /* 小さなデバイスで1列に */
   }
+
+  .topics-title {
+    text-align: center;
+    color: #d10000; /* タイトルの色を維持 */
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 2.0rem; /* タイトルのサイズを大きくして目立たせる */
+  }
 }
