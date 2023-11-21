@@ -5,7 +5,7 @@ function Caution() {
   return (
     <div className="caution-container">
       <h2 className="caution-title">CAUTION</h2>
-      <h3 className="caution-subtitle">注意事項</h3>
+      <h3 className="caution-subtitle">桃山祭での注意事項</h3>
       
       <div className="caution-section">
         <h4>ご来場者様へのお願い</h4>
