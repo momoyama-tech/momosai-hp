@@ -1,18 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import TagSearch from '../components/TagSearch';
-import './News.css';
 
 const News = () => {
   // notifications を useState で初期化する
   const [notifications] = useState([
-    { id: 1, content: "これはお知らせ1です", duration: 5000, tags: ["重要"], image: "https://example.com/image1.jpg", date: new Date("2023-11-01") },
-    { id: 2, content: "お知らせ2: 何か大事なことがあります", duration: 7000, tags: ["一般"], image: "https://example.com/image2.jpg", date: new Date("2023-11-05") },
-    { id: 3, content: "お知らせ3: おめでとうございます！", duration: 3000, tags: ["重要", "祝い事"], image: "https://example.com/image3.jpg", date: new Date("2023-11-10") },
-    { id: 4, content: "お知らせ4: おめでとうございます！", duration: 2000, tags: ["一般", "祝い事"], image: "https://example.com/image4.jpg", date: new Date("2023-11-21") },
+    { id: 1, content: "桃山祭まであと2日!", tags: ["桃山祭2023"], image: "midori.png", date: new Date("2023-11-22") },
+    { id: 2, content: "桃山祭まであと4日!", tags: ["桃山祭2023"], image: "pan.png", date: new Date("2023-11-20") },
+    { id: 3, content: "桃山祭まであと6日!", tags: ["桃山祭2023"], image: "pan2.png", date: new Date("2023-11-18") },
     // ここに必要なだけお知らせを追加
   ]);
 
-  const [selectedTag, setSelectedTag] = useState(null);
+  const [selectedTag] = useState(null);
   const [isMobileView, setIsMobileView] = useState(false);
 
   const debounce = (func, delay) => {
@@ -35,24 +32,21 @@ const News = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const handleTagClick = (tag) => setSelectedTag(tag);
-
   const filteredNotifications = selectedTag
     ? notifications.filter(notification => notification.tags.includes(selectedTag))
     : notifications;
 
   return (
     <div className={`news-container ${isMobileView ? 'mobile-view' : ''}`}>
-      <TagSearch handleTagClick={handleTagClick} />
       <div className="main-content">
-        <h1>桃山祭ニュースページ</h1>
+        <h1 className='tit'>桃山祭News</h1>
         <div className="notification-container">
           {filteredNotifications.map(notification => (
             <div key={notification.id} className="notification-box">
               <img src={notification.image} alt={notification.content} />
-              <p>{notification.content}</p>
-              <p className="date">{`${notification.date.getMonth() + 1}月${notification.date.getDate()}日`}</p>
-              <p className="tags">タグ: {notification.tags.join(", ")}</p>
+              <h2 className="date">{`${notification.date.getMonth() + 1}月${notification.date.getDate()}日`}</h2>
+              <h1 className='title2'>{notification.content}</h1>
+              <h2 className="tags">タグ: {notification.tags.join(", ")}</h2>
             </div>
           ))}
         </div>
