@@ -103,14 +103,25 @@ function Twif01() {
         <p lang="ja" dir="ltr">
           一番エッチなコマンドについて<br />
           ずっと考えてる
-          </p>
-          &mdash; puts@puts (@hide_clone) 
-          <a href="https://twitter.com/hide_clone/status/798826864575844352?ref_src=twsrc%5Etfw">
-            November 16, 2016
-            </a>
-            </blockquote>
-    </div>
-  );
+        </p>
+        &mdash; puts@puts (@hide_clone)
+        <a href="https://twitter.com/hide_clone/status/798826864575844352?ref_src=twsrc%5Etfw">
+          November 16, 2016
+        </a>
+      </blockquote>
+
+      <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">バレンタインに女子からチョコ貰ってるやつとか幻想の類だと思ってたけど本当におるんよねぇ<br/>
+      <br/>俺？もちろん母親から、、、いや中学までだな<br/>高校に入ってからは自分で買ってるわ<br/>むなしいねぇ</p>&mdash; ぷりてぃうぃんどちゃん (@Kumo_kaze1341)
+       <a href="https://twitter.com/Kumo_kaze1341/status/1728132323261182170?ref_src=twsrc%5Etfw">November 24, 2023</a></blockquote>
+
+       
+       <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">たまに若いカップル見てると「お前らのうちほとんどが別れるんやろうな」とか考えて生きてる</p>
+       &mdash; ぷりてぃうぃんどちゃん (@Kumo_kaze1341) 
+       <a href="https://twitter.com/Kumo_kaze1341/status/1727320607858311219?ref_src=twsrc%5Etfw">November 22, 2023</a></blockquote>
+      </div>
+
+      
+        );
 }
 
-export default Twif01;
+        export default Twif01;
