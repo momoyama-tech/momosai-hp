@@ -115,7 +115,7 @@ function Twif01() {
        <a href="https://twitter.com/Kumo_kaze1341/status/1728132323261182170?ref_src=twsrc%5Etfw">November 24, 2023</a></blockquote>
 
        
-       <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">たまに若いカップル見てると「お前らのうちほとんどが別れるんやろうな」とか考えて生きてる</p>
+       <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">たまに若いカップル見てると「お前らのうちほとんどが別れるんやろうな俺が寝取ってやろうか」とか考えて生きてる</p>
        &mdash; ぷりてぃうぃんどちゃん (@Kumo_kaze1341) 
        <a href="https://twitter.com/Kumo_kaze1341/status/1727320607858311219?ref_src=twsrc%5Etfw">November 22, 2023</a></blockquote>
       </div>
